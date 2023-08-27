@@ -3,6 +3,7 @@ button {
   color: hsl(186, 26%, 31%);
   padding: 14px;
   border: none;
+  font-size: 16px;
   transition: all 500ms ease-in-out;
 }
 button:hover {
