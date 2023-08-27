@@ -1,8 +1,7 @@
 // _variables.scss
-// _variables.scss
 @use './colors' as *;
-// Font Sizes
 
+// Font Sizes
 $font-size-small: 14px;
 $font-size-medium: 16px;
 $font-size-large: 18px;
@@ -14,12 +13,17 @@ $secondary-txt-clr: map-get(map-get($colors, green), 40);
 $neutral-txt-clr: map-get(map-get($colors, white), 50);
 $alert-txt-color: map-get(map-get($colors, red), 20);
 
-$link-hover: map-get(map-get($colors, orange), 50);
-
 // Font Weights
 $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
+
+// Others font related
+$link-hover: map-get(map-get($colors, orange), 50);
+
+// Background Colors
+$bg-gray: map-get(map-get($colors, white), 20);
+
 

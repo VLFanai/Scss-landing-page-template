@@ -1,0 +1,23 @@
+@use './colors' as *;
+@use './media-query' as *;
+@use './variables' as *;
+
+// Basic Navbar
+@mixin default-navbar($position: inherit) {
+    position: $position;
+    width: 100vw; // Corrected from 100dvw to 100vw
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $font-size-medium;
+    background:  map-get(map-get($colors, white), 20); // Use the correct variable name here
+}
+
+// Basic Buttons 
+@mixin btn-primary {
+    background-color: $bg-gray;
+    color: $secondary-txt-clr;
+    padding: $font-size-small;
+    border: none;
+    font-size: $font-size-medium;
+}

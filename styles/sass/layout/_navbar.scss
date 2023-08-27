@@ -1,0 +1,18 @@
+@use '../abstracts' as *;
+
+nav {
+    @include default-navbar();
+    z-index: 9;
+    ul {
+        display: flex;
+        list-style: none;
+        a {
+            color: $primary-txt-clr;
+            text-decoration: none;
+            &:hover {
+                color: $secondary-txt-clr;
+                text-decoration: underline;
+            }
+        }
+    }
+}
