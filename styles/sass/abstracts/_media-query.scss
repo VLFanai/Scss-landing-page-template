@@ -1,0 +1,9 @@
+$dynamic-vw: 100dvw;
+$dynamic-vh: 100dvh;
+
+// Breakpoint Map
+$breakpoints: (
+    small: 40em,
+    medium: 65em,
+    large: 80em,
+);

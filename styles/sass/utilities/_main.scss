@@ -2,12 +2,13 @@
 @use '../abstracts' as *;
 
 body {
-    font-family: $font-family;
+    font-family: Roboto;
+    font-size: $font-size-large;
   }
 
   
   a {
     text-decoration: underline;
-    color: $primary-color;
+    color: $neutral-txt-clr;
   }
   
