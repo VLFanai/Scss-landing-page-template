@@ -8,10 +8,10 @@ $font-size-large: 18px;
 $font-size-heading: 24px;
 
 // Font Colors
-$primary-txt-clr: map-get(map-get($colors, black), 10);
-$secondary-txt-clr: map-get(map-get($colors, green), 40);
-$neutral-txt-clr: map-get(map-get($colors, white), 50);
-$alert-txt-color: map-get(map-get($colors, red), 20);
+$txt-clr-primary: map-get(map-get($colors, black), 10);
+$txt-clr-secondary: map-get(map-get($colors, green), 40);
+$txt-clr-neutral: map-get(map-get($colors, white), 50);
+$txt-clr-alert: map-get(map-get($colors, red), 20);
 
 // Font Weights
 $font-weight-light: 300;
