@@ -1,16 +1,19 @@
-@use '../abstracts' as *;
+@use '../abstracts' as nav;
 
+// Note: All variables import from abstracts
+// needs to have a prefix of 'nav.'
 nav {
-    @include default-navbar();
+    @include nav.default-navbar();
     z-index: 9;
     ul {
         display: flex;
         list-style: none;
+        gap: nav.$font-size-small;
         a {
-            color: $primary-txt-clr;
+            color: nav.$txt-clr-primary;
             text-decoration: none;
             &:hover {
-                color: $secondary-txt-clr;
+                color: nav.$txt-clr-secondary;
                 text-decoration: underline;
             }
         }

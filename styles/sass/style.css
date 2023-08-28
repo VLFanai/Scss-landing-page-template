@@ -1,8 +1,11 @@
 button {
+  width: -moz-min-content;
+  width: min-content;
   background-color: hsl(0, 0%, 80%);
   color: hsl(186, 26%, 31%);
   padding: 14px;
   border: none;
+  aspect-ratio: 1.7777777778;
   font-size: 16px;
   transition: all 500ms ease-in-out;
 }
@@ -23,6 +26,7 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
+  gap: 14px;
 }
 nav ul a {
   color: hsl(0, 0%, 10%);
@@ -31,6 +35,16 @@ nav ul a {
 nav ul a:hover {
   color: hsl(186, 26%, 31%);
   text-decoration: underline;
+}
+
+section {
+  background-color: gray;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  aspect-ratio: 1.7777777778;
 }
 
 body {

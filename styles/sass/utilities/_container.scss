@@ -1,0 +1,6 @@
+// Everything related to container
+@use '../abstracts/mixins' as cnt;
+
+section {
+    @include cnt.grid-section-container();
+}

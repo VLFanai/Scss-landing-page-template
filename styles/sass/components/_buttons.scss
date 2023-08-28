@@ -1,9 +1,10 @@
 @use '../abstracts/' as btn;
 
 button {
+    width: min-content;
     @include btn.btn-primary;
     transition: all 500ms ease-in-out;
     &:hover {
-        background-color: btn.$primary-txt-clr;
+        background-color: btn.$txt-clr-primary;
     }
 }

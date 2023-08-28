@@ -1,3 +1,5 @@
+// All Mixins no matter what they are use for, are all to be stored in here-->
+
 @use './colors' as *;
 @use './media-query' as *;
 @use './variables' as *;
@@ -14,10 +16,22 @@
 }
 
 // Basic Buttons 
-@mixin btn-primary {
+@mixin btn-primary($aspt: 16/9) {
     background-color: $bg-gray;
-    color: $secondary-txt-clr;
+    color: $txt-clr-secondary;
     padding: $font-size-small;
     border: none;
+    aspect-ratio: $aspt;
     font-size: $font-size-medium;
+}
+
+// Section mixin as Grid
+@mixin grid-section-container($bg-clr: gray, $aspect: 16/9) {
+    background-color: $bg-clr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    aspect-ratio: $aspect;
 }
